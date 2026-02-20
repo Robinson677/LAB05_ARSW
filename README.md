@@ -1,4 +1,4 @@
-# Escuela Colombiana de Ingeniería Julio Garavito
+ # 🎓 Escuela Colombiana de Ingeniería Julio Garavito
 ## Arquitectura de Software – ARSW
 ### Laboratorio – Parte 2: BluePrints API con Seguridad JWT (OAuth 2.0)
 
@@ -8,7 +8,7 @@ Incluye un endpoint didáctico `/auth/login` que emite el token para facilitar l
 
 ---
 
-## Objetivos
+## 🎯 Objetivos
 - Implementar seguridad en servicios REST usando **OAuth2 Resource Server**.
 - Configurar emisión y validación de **JWT**.
 - Proteger endpoints con **roles y scopes** (`blueprints.read`, `blueprints.write`).
@@ -16,14 +16,14 @@ Incluye un endpoint didáctico `/auth/login` que emite el token para facilitar l
 
 ---
 
-## Requisitos
+## 📋 Requisitos
 - JDK 21
 - Maven 3.9+
 - Git
 
 ---
 
-## Ejecución del proyecto
+## ▶️ Ejecución del proyecto
 1. Clonar o descomprimir el proyecto:
    ```bash
    git clone https://github.com/DECSIS-ECI/Lab_P2_BluePrints_Java21_API_Security_JWT.git
@@ -40,7 +40,7 @@ Incluye un endpoint didáctico `/auth/login` que emite el token para facilitar l
 
 ---
 
-## Endpoints principales
+## 🔌 Endpoints principales
 
 ### 1. Login (emite token)
 ```
@@ -80,7 +80,7 @@ Content-Type: application/json
 
 ---
 
-## Swagger UI
+##  📚 Swagger UI
 - URL: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
 - Pulsa **Authorize**, ingresa el token en el formato:
   ```
@@ -89,7 +89,7 @@ Content-Type: application/json
 
 ---
 
-## Estructura del proyecto
+## 🗂️ Estructura del proyecto
 ```
 src/main/java/co/edu/eci/blueprints/
   ├── api/BlueprintController.java       # Endpoints protegidos
@@ -107,7 +107,7 @@ src/main/resources/
 
 ---
 
-## Actividades propuestas
+## 🧪 Actividades propuestas
 1. Revisar el código de configuración de seguridad (`SecurityConfig`) e identificar cómo se definen los endpoints públicos y protegidos.
 2. Explorar el flujo de login y analizar las claims del JWT emitido.
 3. Extender los scopes (`blueprints.read`, `blueprints.write`) para controlar otros endpoints de la API, del laboratorio P1 trabajado.
@@ -116,12 +116,12 @@ src/main/resources/
 
 ---
 
-## Lecturas recomendadas
+## 📖 Lecturas recomendadas
 - [Spring Security Reference – OAuth2 Resource Server](https://docs.spring.io/spring-security/reference/servlet/oauth2/resource-server/index.html)
 - [Spring Boot – Securing Web Applications](https://spring.io/guides/gs/securing-web/)
 - [JSON Web Tokens – jwt.io](https://jwt.io/introduction)
 
 ---
 
-## Licencia
+## 📜 Licencia
 Proyecto educativo con fines académicos – Escuela Colombiana de Ingeniería Julio Garavito.
