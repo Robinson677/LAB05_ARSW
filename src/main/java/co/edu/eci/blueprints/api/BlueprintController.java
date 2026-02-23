@@ -13,6 +13,7 @@ import co.edu.eci.blueprints.services.BlueprintsServices;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 
@@ -21,6 +22,7 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/api/blueprints")
+@Tag(name = "Blueprints", description = "CRUD de blueprints, requiere token Bearer")
 public class BlueprintController {
 
     private final BlueprintsServices services;
