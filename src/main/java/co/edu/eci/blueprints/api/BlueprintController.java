@@ -21,6 +21,7 @@ import java.util.Map;
 import java.util.Set;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/api/blueprints")
 @Tag(name = "Blueprints", description = "CRUD de blueprints, requiere token Bearer")
 public class BlueprintController {

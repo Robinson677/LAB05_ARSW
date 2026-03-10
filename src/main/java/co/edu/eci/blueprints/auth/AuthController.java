@@ -18,7 +18,8 @@ import java.time.Instant;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/auth")
+@CrossOrigin(origins = "http://localhost:5173")
+@RequestMapping("/api/auth")
 @Tag(name = "Autenticación", description = "Emisión de tokens JWT para acceder a la API")
 public class AuthController {
 
